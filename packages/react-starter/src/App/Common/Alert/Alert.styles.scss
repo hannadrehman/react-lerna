@@ -1,0 +1,31 @@
+@import "../../../Styles/theme";
+
+.alert {
+  margin: 2px;
+  @at-root #{&}__wrapper {
+    padding: 7px 15px;
+    border: 1px solid $gray;
+    color: white;
+    background-color: $accent;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid $accent;
+  }
+  @at-root #{&}--danger {
+    border-color: $secondary-lite;
+    color: #ec6060;
+    background-color: #e6c3bd;
+  }
+  @at-root #{&}--info {
+    border-color: #93e496;
+    color: #4caf50;
+    background-color: #e4ffc5;
+  }
+  @at-root #{&}--disable {
+    border-color: #d2c5c2;
+    color: #b39c9c;
+    background-color: #fbf6f5;
+  }
+}

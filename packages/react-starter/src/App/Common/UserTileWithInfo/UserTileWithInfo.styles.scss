@@ -1,0 +1,60 @@
+@import "../../../Styles/theme";
+
+.usertilewithinfo {
+  display: inline-block;
+  margin: 0 10px 20px 10px;
+  @at-root #{&}__wrapper {
+    position: relative;
+    min-width: 176px;
+    max-width: 176px;
+    min-height: 176px;
+    max-height: 176px;
+    border-radius: 8px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  @at-root #{&}--grayed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    background-color: $accent;
+    opacity: 0.7;
+    z-index: 2;
+  }
+  @at-root #{&}__image {
+    position: relative;
+    width: 176px;
+    background-color: $accent;
+    border-radius: 8px;
+    img {
+      width: 176px;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+  }
+  @at-root #{&}__info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 48px;
+    background-color: $primary-black;
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    p {
+      margin: 0;
+      padding: 0;
+      &.name {
+        font-size: $medium;
+      }
+      &.designation {
+        font-size: $small;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "../../../Styles/theme";
+.errorhandler {
+  @at-root #{&}__wrapper {
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+  }
+}

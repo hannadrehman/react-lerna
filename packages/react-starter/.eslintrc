@@ -1,0 +1,32 @@
+{
+  "env": {
+      "browser": true,
+      "node": false,
+      "jest": true
+  },
+  "extends": "airbnb",
+  "globals": {
+  },
+  "parser": "babel-eslint",
+  "rules":{
+    "react/forbid-prop-types": [false]
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {
+        "root": ["./src"],
+        "alias": {
+          "App": "./src/App",
+          "Common": "./src/App/Common",
+          "Elements": "./src/App/Elements",
+          "SubApps": "./src/App/SubApps",
+          "Constants": "./src/Constants",
+          "Services": "./src/Services",
+          "Store": "./src/Store",
+          "Styles": "./src/Styles",
+          "Assets": "./src/Assets"
+        }
+      }
+    }
+  }
+}

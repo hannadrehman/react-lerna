@@ -1,0 +1,6 @@
+.imageavatar {
+  @at-root #{&}__wrapper {
+    position: relative;
+    display: inline-block;
+  }
+}

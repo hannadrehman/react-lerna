@@ -1,0 +1,11 @@
+@import "../../../Styles/theme";
+
+.bookingfor {
+  @at-root #{&}__wrapper {
+    position: relative;
+    p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "presets": [["env", { "modules": false }], "react"],
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    "syntax-dynamic-import",
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "App": "./src/App",
+          "Common": "./src/App/Common",
+          "Elements": "./src/App/Elements",
+          "SubApps": "./src/App/SubApps",
+          "Constants": "./src/Constants",
+          "Services": "./src/Services",
+          "Store": "./src/Store",
+          "Styles": "./src/Styles",
+          "Assets": "./src/Assets"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "presets": [["env", { "modules": false }], "react"],
+      "plugins": [
+        "transform-object-rest-spread",
+        "transform-class-properties",
+        "syntax-dynamic-import"]
+    }
+  }
+}

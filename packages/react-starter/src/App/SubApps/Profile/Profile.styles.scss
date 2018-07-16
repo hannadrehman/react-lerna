@@ -1,0 +1,5 @@
+.home {
+  @at-root #{&}__wrapper {
+    position: relative;
+  }
+}

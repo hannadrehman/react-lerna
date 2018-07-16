@@ -1,0 +1,17 @@
+@import "../../../Styles/theme";
+
+.dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  @at-root #{&}__wrapper {
+    min-width: 200px;
+    display: inline-block;
+  }
+  @at-root #{&}__formcontrol {
+    min-width: 200px !important; /* important because it has to override the material styles*/
+    padding: 1px !important; /* important because it has to override the material styles*/
+  }
+  @at-root #{&}--error {
+    color: $secondary;
+  }
+}

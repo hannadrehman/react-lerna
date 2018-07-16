@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "App": ["./src/App/"],
+      "Common": ["./src/App/Common"],
+      "Elements": ["./src/App/Elements"],
+      "Routes": ["./src/App/Routes"],
+      "Constants": ["./src/Constants"],
+      "Services": ["./src/Services"],
+      "Store": ["./src/Store"],
+      "Styles": ["./src/Styles"],
+      "*": ["./src/*"],
+    }
+  }
+}

@@ -1,21 +1,733 @@
-0 silly input [ 'publish' ]
-1 silly flags { _: [ 'publish' ], 'reject-cycles': false, rejectCycles: false }
+0 silly input []
+1 silly flags { _: [ 'bootstrap' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   args: [] }
 2 verbose rootPath /Users/akashtalreja/Hannad/Apps/lerna-repo
 3 info version 2.11.0
-4 silly isInitialized
-5 silly isInitialized true
-6 silly existsSync /Users/akashtalreja/Hannad/Apps/lerna-repo/VERSION
-7 silly initialize attempt
-8 info current version 0.0.0
-9 silly isDetachedHead
-10 silly getCurrentBranch
-11 error initialize caught error
-12 error Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
-12 error Use '--' to separate paths from revisions, like this:
-12 error 'git <command> [<revision>...] -- [<file>...]'
-12 error
-12 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
-12 error     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-12 error     at Function.getCurrentBranch (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:202:59)
-12 error     at Function.isDetachedHead (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:45:37)
-12 error     at PublishCommand.initialize (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:260:36)
+4 silly existsSync /Users/akashtalreja/Hannad/Apps/lerna-repo/VERSION
+5 silly initialize attempt
+6 silly npmConfig { registry: undefined,
+6 silly npmConfig   npmClient: undefined,
+6 silly npmConfig   npmClientArgs: undefined,
+6 silly npmConfig   mutex: undefined }
+7 silly initialize success
+8 silly execute attempt
+9 info Bootstrapping 3 packages
+10 info lifecycle preinstall
+11 silly runScript preinstall react-elements-md
+12 silly react-elements-md
+13 silly runScript preinstall usage
+14 silly usage
+15 silly runScript preinstall react-redux-sagas
+16 silly react-redux-sagas
+17 silly hasMatchingDependency react-redux-sagas react-elements-md
+18 silly hasDependencyInstalled react-redux-sagas babel-polyfill
+19 silly dependencyIsSatisfied [ 'babel-polyfill',
+19 silly dependencyIsSatisfied   '^6.26.0',
+19 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+20 verbose dependencyIsSatisfied babel-polyfill true
+21 silly hasDependencyInstalled react-elements-md prop-types
+22 silly dependencyIsSatisfied [ 'prop-types',
+22 silly dependencyIsSatisfied   '^15.6.2',
+22 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+23 verbose dependencyIsSatisfied prop-types true
+24 silly hasDependencyInstalled react-redux-sagas prop-types
+25 silly dependencyIsSatisfied [ 'prop-types',
+25 silly dependencyIsSatisfied   '^15.6.2',
+25 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+26 verbose dependencyIsSatisfied prop-types true
+27 silly hasDependencyInstalled react-elements-md react
+28 silly dependencyIsSatisfied [ 'react',
+28 silly dependencyIsSatisfied   '^16.4.1',
+28 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+29 verbose dependencyIsSatisfied react true
+30 silly hasDependencyInstalled react-redux-sagas react
+31 silly dependencyIsSatisfied [ 'react',
+31 silly dependencyIsSatisfied   '^16.4.1',
+31 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+32 verbose dependencyIsSatisfied react true
+33 silly hasDependencyInstalled react-elements-md react-code-splitting
+34 silly dependencyIsSatisfied [ 'react-code-splitting',
+34 silly dependencyIsSatisfied   '^1.2.1',
+34 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+35 verbose dependencyIsSatisfied react-code-splitting true
+36 silly hasDependencyInstalled react-redux-sagas react-code-splitting
+37 silly dependencyIsSatisfied [ 'react-code-splitting',
+37 silly dependencyIsSatisfied   '^1.2.1',
+37 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+38 verbose dependencyIsSatisfied react-code-splitting true
+39 silly hasDependencyInstalled react-redux-sagas react-dom
+40 silly dependencyIsSatisfied [ 'react-dom',
+40 silly dependencyIsSatisfied   '^16.4.1',
+40 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+41 verbose dependencyIsSatisfied react-dom true
+42 silly hasDependencyInstalled react-redux-sagas react-event-listener
+43 silly dependencyIsSatisfied [ 'react-event-listener',
+43 silly dependencyIsSatisfied   '^0.6.1',
+43 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+44 verbose dependencyIsSatisfied react-event-listener true
+45 silly hasDependencyInstalled react-redux-sagas react-hot-loader
+46 silly dependencyIsSatisfied [ 'react-hot-loader',
+46 silly dependencyIsSatisfied   '^4.3.3',
+46 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+47 verbose dependencyIsSatisfied react-hot-loader true
+48 silly hasDependencyInstalled react-redux-sagas react-redux
+49 silly dependencyIsSatisfied [ 'react-redux',
+49 silly dependencyIsSatisfied   '^5.0.7',
+49 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+50 verbose dependencyIsSatisfied react-redux true
+51 silly hasDependencyInstalled react-elements-md react-router-dom
+52 silly dependencyIsSatisfied [ 'react-router-dom',
+52 silly dependencyIsSatisfied   '^4.3.1',
+52 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+53 verbose dependencyIsSatisfied react-router-dom true
+54 silly hasDependencyInstalled react-redux-sagas react-router-dom
+55 silly dependencyIsSatisfied [ 'react-router-dom',
+55 silly dependencyIsSatisfied   '^4.3.1',
+55 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+56 verbose dependencyIsSatisfied react-router-dom true
+57 silly hasDependencyInstalled react-redux-sagas redux
+58 silly dependencyIsSatisfied [ 'redux',
+58 silly dependencyIsSatisfied   '^4.0.0',
+58 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+59 verbose dependencyIsSatisfied redux true
+60 silly hasDependencyInstalled react-redux-sagas redux-saga
+61 silly dependencyIsSatisfied [ 'redux-saga',
+61 silly dependencyIsSatisfied   '^0.16.0',
+61 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+62 verbose dependencyIsSatisfied redux-saga true
+63 silly hasDependencyInstalled react-redux-sagas regenerator-runtime
+64 silly dependencyIsSatisfied [ 'regenerator-runtime',
+64 silly dependencyIsSatisfied   '^0.12.0',
+64 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+65 verbose dependencyIsSatisfied regenerator-runtime true
+66 silly hasDependencyInstalled react-elements-md babel-core
+67 silly dependencyIsSatisfied [ 'babel-core',
+67 silly dependencyIsSatisfied   '^6.26.3',
+67 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+68 verbose dependencyIsSatisfied babel-core true
+69 silly hasDependencyInstalled react-redux-sagas babel-core
+70 silly dependencyIsSatisfied [ 'babel-core',
+70 silly dependencyIsSatisfied   '^6.26.3',
+70 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+71 verbose dependencyIsSatisfied babel-core true
+72 silly hasDependencyInstalled react-elements-md babel-eslint
+73 silly dependencyIsSatisfied [ 'babel-eslint',
+73 silly dependencyIsSatisfied   '^8.2.6',
+73 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+74 verbose dependencyIsSatisfied babel-eslint true
+75 silly hasDependencyInstalled react-redux-sagas babel-eslint
+76 silly dependencyIsSatisfied [ 'babel-eslint',
+76 silly dependencyIsSatisfied   '^8.2.6',
+76 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+77 verbose dependencyIsSatisfied babel-eslint true
+78 silly hasDependencyInstalled react-elements-md babel-plugin-syntax-dynamic-import
+79 silly dependencyIsSatisfied [ 'babel-plugin-syntax-dynamic-import',
+79 silly dependencyIsSatisfied   '^6.18.0',
+79 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+80 verbose dependencyIsSatisfied babel-plugin-syntax-dynamic-import true
+81 silly hasDependencyInstalled react-redux-sagas babel-plugin-syntax-dynamic-import
+82 silly dependencyIsSatisfied [ 'babel-plugin-syntax-dynamic-import',
+82 silly dependencyIsSatisfied   '^6.18.0',
+82 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+83 verbose dependencyIsSatisfied babel-plugin-syntax-dynamic-import true
+84 silly hasDependencyInstalled react-elements-md babel-preset-env
+85 silly dependencyIsSatisfied [ 'babel-preset-env',
+85 silly dependencyIsSatisfied   '^1.7.0',
+85 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+86 verbose dependencyIsSatisfied babel-preset-env true
+87 silly hasDependencyInstalled react-redux-sagas babel-preset-env
+88 silly dependencyIsSatisfied [ 'babel-preset-env',
+88 silly dependencyIsSatisfied   '^1.7.0',
+88 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+89 verbose dependencyIsSatisfied babel-preset-env true
+90 silly hasDependencyInstalled react-elements-md babel-preset-react
+91 silly dependencyIsSatisfied [ 'babel-preset-react',
+91 silly dependencyIsSatisfied   '^6.24.1',
+91 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+92 verbose dependencyIsSatisfied babel-preset-react true
+93 silly hasDependencyInstalled react-redux-sagas babel-preset-react
+94 silly dependencyIsSatisfied [ 'babel-preset-react',
+94 silly dependencyIsSatisfied   '^6.24.1',
+94 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+95 verbose dependencyIsSatisfied babel-preset-react true
+96 silly hasDependencyInstalled react-elements-md babel-preset-stage-0
+97 silly dependencyIsSatisfied [ 'babel-preset-stage-0',
+97 silly dependencyIsSatisfied   '^6.3.13',
+97 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+98 verbose dependencyIsSatisfied babel-preset-stage-0 true
+99 silly hasDependencyInstalled react-redux-sagas babel-preset-stage-0
+100 silly dependencyIsSatisfied [ 'babel-preset-stage-0',
+100 silly dependencyIsSatisfied   '^6.3.13',
+100 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+101 verbose dependencyIsSatisfied babel-preset-stage-0 true
+102 silly hasDependencyInstalled react-elements-md eslint
+103 silly dependencyIsSatisfied [ 'eslint',
+103 silly dependencyIsSatisfied   '^5.1.0',
+103 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+104 verbose dependencyIsSatisfied eslint true
+105 silly hasDependencyInstalled react-redux-sagas eslint
+106 silly dependencyIsSatisfied [ 'eslint',
+106 silly dependencyIsSatisfied   '^5.1.0',
+106 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+107 verbose dependencyIsSatisfied eslint true
+108 silly hasDependencyInstalled react-elements-md eslint-config-airbnb
+109 silly dependencyIsSatisfied [ 'eslint-config-airbnb',
+109 silly dependencyIsSatisfied   '^17.0.0',
+109 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+110 verbose dependencyIsSatisfied eslint-config-airbnb true
+111 silly hasDependencyInstalled react-redux-sagas eslint-config-airbnb
+112 silly dependencyIsSatisfied [ 'eslint-config-airbnb',
+112 silly dependencyIsSatisfied   '^17.0.0',
+112 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+113 verbose dependencyIsSatisfied eslint-config-airbnb true
+114 silly hasDependencyInstalled react-elements-md eslint-import-resolver-babel-module
+115 silly dependencyIsSatisfied [ 'eslint-import-resolver-babel-module',
+115 silly dependencyIsSatisfied   '^4.0.0',
+115 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+116 verbose dependencyIsSatisfied eslint-import-resolver-babel-module true
+117 silly hasDependencyInstalled react-redux-sagas eslint-import-resolver-babel-module
+118 silly dependencyIsSatisfied [ 'eslint-import-resolver-babel-module',
+118 silly dependencyIsSatisfied   '^4.0.0',
+118 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+119 verbose dependencyIsSatisfied eslint-import-resolver-babel-module true
+120 silly hasDependencyInstalled react-elements-md eslint-loader
+121 silly dependencyIsSatisfied [ 'eslint-loader',
+121 silly dependencyIsSatisfied   '^2.0.0',
+121 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+122 verbose dependencyIsSatisfied eslint-loader true
+123 silly hasDependencyInstalled react-redux-sagas eslint-loader
+124 silly dependencyIsSatisfied [ 'eslint-loader',
+124 silly dependencyIsSatisfied   '^2.0.0',
+124 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+125 verbose dependencyIsSatisfied eslint-loader true
+126 silly hasDependencyInstalled react-elements-md eslint-plugin-import
+127 silly dependencyIsSatisfied [ 'eslint-plugin-import',
+127 silly dependencyIsSatisfied   '^2.13.0',
+127 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+128 verbose dependencyIsSatisfied eslint-plugin-import true
+129 silly hasDependencyInstalled react-redux-sagas eslint-plugin-import
+130 silly dependencyIsSatisfied [ 'eslint-plugin-import',
+130 silly dependencyIsSatisfied   '^2.13.0',
+130 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+131 verbose dependencyIsSatisfied eslint-plugin-import true
+132 silly hasDependencyInstalled react-elements-md eslint-plugin-jsx-a11y
+133 silly dependencyIsSatisfied [ 'eslint-plugin-jsx-a11y',
+133 silly dependencyIsSatisfied   '^6.1.0',
+133 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+134 verbose dependencyIsSatisfied eslint-plugin-jsx-a11y true
+135 silly hasDependencyInstalled react-redux-sagas eslint-plugin-jsx-a11y
+136 silly dependencyIsSatisfied [ 'eslint-plugin-jsx-a11y',
+136 silly dependencyIsSatisfied   '^6.1.0',
+136 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+137 verbose dependencyIsSatisfied eslint-plugin-jsx-a11y true
+138 silly hasDependencyInstalled react-elements-md eslint-plugin-react
+139 silly dependencyIsSatisfied [ 'eslint-plugin-react',
+139 silly dependencyIsSatisfied   '^7.10.0',
+139 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+140 verbose dependencyIsSatisfied eslint-plugin-react true
+141 silly hasDependencyInstalled react-redux-sagas eslint-plugin-react
+142 silly dependencyIsSatisfied [ 'eslint-plugin-react',
+142 silly dependencyIsSatisfied   '^7.10.0',
+142 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+143 verbose dependencyIsSatisfied eslint-plugin-react true
+144 silly hasDependencyInstalled react-elements-md extract-text-webpack-plugin
+145 silly dependencyIsSatisfied [ 'extract-text-webpack-plugin',
+145 silly dependencyIsSatisfied   '*',
+145 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+146 verbose dependencyIsSatisfied extract-text-webpack-plugin true
+147 silly hasDependencyInstalled react-redux-sagas extract-text-webpack-plugin
+148 silly dependencyIsSatisfied [ 'extract-text-webpack-plugin',
+148 silly dependencyIsSatisfied   '*',
+148 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+149 verbose dependencyIsSatisfied extract-text-webpack-plugin true
+150 silly hasDependencyInstalled react-elements-md @material-ui/core
+151 silly dependencyIsSatisfied [ '@material-ui/core',
+151 silly dependencyIsSatisfied   '^1.3.1',
+151 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+152 verbose dependencyIsSatisfied @material-ui/core true
+153 silly hasDependencyInstalled react-redux-sagas @material-ui/core
+154 silly dependencyIsSatisfied [ '@material-ui/core',
+154 silly dependencyIsSatisfied   '^1.3.1',
+154 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+155 verbose dependencyIsSatisfied @material-ui/core true
+156 silly hasDependencyInstalled react-elements-md material-ui-pickers
+157 silly dependencyIsSatisfied [ 'material-ui-pickers',
+157 silly dependencyIsSatisfied   '^1.0.0-rc.11',
+157 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+158 verbose dependencyIsSatisfied material-ui-pickers true
+159 silly hasDependencyInstalled react-redux-sagas material-ui-pickers
+160 silly dependencyIsSatisfied [ 'material-ui-pickers',
+160 silly dependencyIsSatisfied   '^1.0.0-rc.11',
+160 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+161 verbose dependencyIsSatisfied material-ui-pickers true
+162 silly hasDependencyInstalled react-elements-md moment
+163 silly dependencyIsSatisfied [ 'moment',
+163 silly dependencyIsSatisfied   '^2.22.2',
+163 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+164 verbose dependencyIsSatisfied moment true
+165 silly hasDependencyInstalled react-redux-sagas moment
+166 silly dependencyIsSatisfied [ 'moment',
+166 silly dependencyIsSatisfied   '^2.22.2',
+166 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+167 verbose dependencyIsSatisfied moment true
+168 silly hasDependencyInstalled react-elements-md react-autosuggest
+169 silly dependencyIsSatisfied [ 'react-autosuggest',
+169 silly dependencyIsSatisfied   '^9.3.4',
+169 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-elements-md/node_modules' ]
+170 verbose dependencyIsSatisfied react-autosuggest true
+171 silly hasDependencyInstalled react-redux-sagas react-autosuggest
+172 silly dependencyIsSatisfied [ 'react-autosuggest',
+172 silly dependencyIsSatisfied   '^9.3.4',
+172 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+173 verbose dependencyIsSatisfied react-autosuggest true
+174 silly hasDependencyInstalled react-redux-sagas autoprefixer
+175 silly dependencyIsSatisfied [ 'autoprefixer',
+175 silly dependencyIsSatisfied   '^8.6.5',
+175 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+176 verbose dependencyIsSatisfied autoprefixer true
+177 silly hasDependencyInstalled react-redux-sagas babel-loader
+178 silly dependencyIsSatisfied [ 'babel-loader',
+178 silly dependencyIsSatisfied   '^7.1.5',
+178 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+179 verbose dependencyIsSatisfied babel-loader true
+180 silly hasDependencyInstalled react-redux-sagas babel-plugin-module-resolver
+181 silly dependencyIsSatisfied [ 'babel-plugin-module-resolver',
+181 silly dependencyIsSatisfied   '^3.1.1',
+181 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+182 verbose dependencyIsSatisfied babel-plugin-module-resolver true
+183 silly hasDependencyInstalled react-redux-sagas clean-webpack-plugin
+184 silly dependencyIsSatisfied [ 'clean-webpack-plugin',
+184 silly dependencyIsSatisfied   '^0.1.19',
+184 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+185 verbose dependencyIsSatisfied clean-webpack-plugin true
+186 silly hasDependencyInstalled react-redux-sagas css-loader
+187 silly dependencyIsSatisfied [ 'css-loader',
+187 silly dependencyIsSatisfied   '^1.0.0',
+187 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+188 verbose dependencyIsSatisfied css-loader true
+189 silly hasDependencyInstalled react-redux-sagas html-webpack-plugin
+190 silly dependencyIsSatisfied [ 'html-webpack-plugin',
+190 silly dependencyIsSatisfied   '^3.2.0',
+190 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+191 verbose dependencyIsSatisfied html-webpack-plugin true
+192 silly hasDependencyInstalled react-redux-sagas mini-css-extract-plugin
+193 silly dependencyIsSatisfied [ 'mini-css-extract-plugin',
+193 silly dependencyIsSatisfied   '^0.4.1',
+193 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+194 verbose dependencyIsSatisfied mini-css-extract-plugin true
+195 silly hasDependencyInstalled react-redux-sagas node-sass
+196 silly dependencyIsSatisfied [ 'node-sass',
+196 silly dependencyIsSatisfied   '^4.9.2',
+196 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+197 verbose dependencyIsSatisfied node-sass true
+198 silly hasDependencyInstalled react-redux-sagas optimize-css-assets-webpack-plugin
+199 silly dependencyIsSatisfied [ 'optimize-css-assets-webpack-plugin',
+199 silly dependencyIsSatisfied   '^4.0.3',
+199 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+200 verbose dependencyIsSatisfied optimize-css-assets-webpack-plugin true
+201 silly hasDependencyInstalled react-redux-sagas postcss-loader
+202 silly dependencyIsSatisfied [ 'postcss-loader',
+202 silly dependencyIsSatisfied   '^2.1.6',
+202 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+203 verbose dependencyIsSatisfied postcss-loader true
+204 silly hasDependencyInstalled react-redux-sagas sass-loader
+205 silly dependencyIsSatisfied [ 'sass-loader',
+205 silly dependencyIsSatisfied   '^7.0.3',
+205 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+206 verbose dependencyIsSatisfied sass-loader true
+207 silly hasDependencyInstalled react-redux-sagas style-loader
+208 silly dependencyIsSatisfied [ 'style-loader',
+208 silly dependencyIsSatisfied   '^0.21.0',
+208 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+209 verbose dependencyIsSatisfied style-loader true
+210 silly hasDependencyInstalled react-redux-sagas system-bell-webpack-plugin
+211 silly dependencyIsSatisfied [ 'system-bell-webpack-plugin',
+211 silly dependencyIsSatisfied   '*',
+211 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+212 verbose dependencyIsSatisfied system-bell-webpack-plugin true
+213 silly hasDependencyInstalled react-redux-sagas uglifyjs-webpack-plugin
+214 silly dependencyIsSatisfied [ 'uglifyjs-webpack-plugin',
+214 silly dependencyIsSatisfied   '^1.2.7',
+214 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+215 verbose dependencyIsSatisfied uglifyjs-webpack-plugin true
+216 silly hasDependencyInstalled react-redux-sagas webpack
+217 silly dependencyIsSatisfied [ 'webpack',
+217 silly dependencyIsSatisfied   '^4.16.0',
+217 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+218 verbose dependencyIsSatisfied webpack true
+219 silly hasDependencyInstalled react-redux-sagas webpack-bundle-analyzer
+220 silly dependencyIsSatisfied [ 'webpack-bundle-analyzer',
+220 silly dependencyIsSatisfied   '^2.13.1',
+220 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+221 verbose dependencyIsSatisfied webpack-bundle-analyzer true
+222 silly hasDependencyInstalled react-redux-sagas webpack-bundle-tracker
+223 silly dependencyIsSatisfied [ 'webpack-bundle-tracker',
+223 silly dependencyIsSatisfied   '^0.3.0',
+223 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+224 verbose dependencyIsSatisfied webpack-bundle-tracker true
+225 silly hasDependencyInstalled react-redux-sagas webpack-cli
+226 silly dependencyIsSatisfied [ 'webpack-cli',
+226 silly dependencyIsSatisfied   '^3.0.8',
+226 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+227 verbose dependencyIsSatisfied webpack-cli true
+228 silly hasDependencyInstalled react-redux-sagas webpack-dev-server
+229 silly dependencyIsSatisfied [ 'webpack-dev-server',
+229 silly dependencyIsSatisfied   '^3.1.4',
+229 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+230 verbose dependencyIsSatisfied webpack-dev-server true
+231 silly hasDependencyInstalled react-redux-sagas axios
+232 silly dependencyIsSatisfied [ 'axios',
+232 silly dependencyIsSatisfied   '^0.18.0',
+232 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/react-starter/node_modules' ]
+233 verbose dependencyIsSatisfied axios true
+234 silly hasDependencyInstalled usage alpha
+235 silly dependencyIsSatisfied [ 'alpha',
+235 silly dependencyIsSatisfied   '^0.0.1',
+235 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/usage/node_modules' ]
+236 verbose dependencyIsSatisfied alpha false
+237 silly hasDependencyInstalled usage beta
+238 silly dependencyIsSatisfied [ 'beta',
+238 silly dependencyIsSatisfied   '^0.0.1',
+238 silly dependencyIsSatisfied   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/usage/node_modules' ]
+239 verbose dependencyIsSatisfied beta false
+240 silly root dependencies []
+241 silly leaf dependencies {
+241 silly leaf dependencies   "react-redux-sagas": [
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-polyfill@^6.26.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "prop-types@^15.6.2",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "react@^16.4.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "react-code-splitting@^1.2.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "react-dom@^16.4.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "react-event-listener@^0.6.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "react-hot-loader@^4.3.3",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "react-redux@^5.0.7",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "react-router-dom@^4.3.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "redux@^4.0.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "redux-saga@^0.16.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "regenerator-runtime@^0.12.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-core@^6.26.3",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-eslint@^8.2.6",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-plugin-syntax-dynamic-import@^6.18.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-preset-env@^1.7.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-preset-react@^6.24.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-preset-stage-0@^6.3.13",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "eslint@^5.1.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "eslint-config-airbnb@^17.0.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "eslint-import-resolver-babel-module@^4.0.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "eslint-loader@^2.0.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "eslint-plugin-import@^2.13.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "eslint-plugin-jsx-a11y@^6.1.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "eslint-plugin-react@^7.10.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "extract-text-webpack-plugin@*",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "@material-ui/core@^1.3.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "material-ui-pickers@^1.0.0-rc.11",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "moment@^2.22.2",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "react-autosuggest@^9.3.4",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "autoprefixer@^8.6.5",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-loader@^7.1.5",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-plugin-module-resolver@^3.1.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "clean-webpack-plugin@^0.1.19",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "css-loader@^1.0.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "html-webpack-plugin@^3.2.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "mini-css-extract-plugin@^0.4.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "node-sass@^4.9.2",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "optimize-css-assets-webpack-plugin@^4.0.3",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "postcss-loader@^2.1.6",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "sass-loader@^7.0.3",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "style-loader@^0.21.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "system-bell-webpack-plugin@*",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "uglifyjs-webpack-plugin@^1.2.7",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "webpack@^4.16.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "webpack-bundle-analyzer@^2.13.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "webpack-bundle-tracker@^0.3.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "webpack-cli@^3.0.8",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "webpack-dev-server@^3.1.4",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "axios@^0.18.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     }
+241 silly leaf dependencies   ],
+241 silly leaf dependencies   "react-elements-md": [
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "prop-types@^15.6.2",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "react@^16.4.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "react-code-splitting@^1.2.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "react-router-dom@^4.3.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-core@^6.26.3",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-eslint@^8.2.6",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-plugin-syntax-dynamic-import@^6.18.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-preset-env@^1.7.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-preset-react@^6.24.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "babel-preset-stage-0@^6.3.13",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "eslint@^5.1.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "eslint-config-airbnb@^17.0.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "eslint-import-resolver-babel-module@^4.0.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "eslint-loader@^2.0.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "eslint-plugin-import@^2.13.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "eslint-plugin-jsx-a11y@^6.1.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "eslint-plugin-react@^7.10.0",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "extract-text-webpack-plugin@*",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "@material-ui/core@^1.3.1",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "material-ui-pickers@^1.0.0-rc.11",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "moment@^2.22.2",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "react-autosuggest@^9.3.4",
+241 silly leaf dependencies       "isSatisfied": true
+241 silly leaf dependencies     }
+241 silly leaf dependencies   ],
+241 silly leaf dependencies   "usage": [
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "alpha@^0.0.1",
+241 silly leaf dependencies       "isSatisfied": false
+241 silly leaf dependencies     },
+241 silly leaf dependencies     {
+241 silly leaf dependencies       "dependency": "beta@^0.0.1",
+241 silly leaf dependencies       "isSatisfied": false
+241 silly leaf dependencies     }
+241 silly leaf dependencies   ]
+241 silly leaf dependencies }
+242 info Installing external dependencies
+243 verbose actions 1 actions, concurrency 4
+244 silly installInDir usage [ 'alpha@^0.0.1', 'beta@^0.0.1' ]
+245 silly installInDir backup /Users/akashtalreja/Hannad/Apps/lerna-repo/packages/usage/package.json
+246 silly rename [ '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/usage/package.json',
+246 silly rename   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/usage/package.json.lerna_backup' ]
+247 silly installInDir writing tempJson { dependencies: { alpha: '^0.0.1', beta: '^0.0.1' } }
+248 silly getExecOpts { cwd: '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/usage' }
+249 silly installInDir [ 'npm', [ 'install' ] ]
+250 silly installInDir cleanup /Users/akashtalreja/Hannad/Apps/lerna-repo/packages/usage/package.json
+251 silly renameSync [ '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/usage/package.json.lerna_backup',
+251 silly renameSync   '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/usage/package.json' ]
+252 verbose installed leaf usage
+253 error execute callback with error
+254 error Error: Command failed: npm install
+254 error npm WARN checkPermissions Missing write access to /Users/akashtalreja/Hannad/Apps/lerna-repo/packages/usage/node_modules/alpha
+254 error npm WARN checkPermissions Missing write access to /Users/akashtalreja/Hannad/Apps/lerna-repo/packages/usage/node_modules/beta
+254 error npm WARN usage No description
+254 error npm WARN usage No repository field.
+254 error npm WARN usage No license field.
+254 error
+254 error npm ERR! path /Users/akashtalreja/Hannad/Apps/lerna-repo/packages/usage/node_modules/alpha
+254 error npm ERR! code ENOENT
+254 error npm ERR! errno -2
+254 error npm ERR! syscall access
+254 error npm ERR! enoent ENOENT: no such file or directory, access '/Users/akashtalreja/Hannad/Apps/lerna-repo/packages/usage/node_modules/alpha'
+254 error npm ERR! enoent This is related to npm not being able to find a file.
+254 error npm ERR! enoent
+254 error
+254 error npm ERR! A complete log of this run can be found in:
+254 error npm ERR!     /Users/akashtalreja/.npm/_logs/2018-07-16T11_51_57_903Z-debug.log
+254 error
+254 error     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+254 error     at <anonymous>

@@ -1,0 +1,7 @@
+.checkbox {
+  @at-root #{&}__wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 1px;
+  }
+}

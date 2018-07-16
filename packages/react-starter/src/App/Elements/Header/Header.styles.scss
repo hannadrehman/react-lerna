@@ -1,0 +1,21 @@
+.header {
+  @at-root #{&}__wrapper {
+    position: relative;
+  }
+  @at-root #{&}__logo {
+    text-decoration: none;
+    color: white;
+  }
+  @at-root #{&}__flexer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @at-root #{&}__useravatar {
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0 10px;
+    }
+  }
+}

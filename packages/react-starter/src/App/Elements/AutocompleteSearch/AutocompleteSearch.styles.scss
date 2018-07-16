@@ -1,0 +1,12 @@
+@import "../../../Styles/theme";
+
+.autocompletesearch {
+  @at-root #{&}__wrapper {
+    display: inline-block;
+    border: 1px solid $accent;
+    padding: 10px;
+  }
+  @at-root #{&}--max-width {
+    width: 400px;
+  }
+}
